@@ -20,16 +20,13 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Work with us</h2>
+          <h2 className={classes.title}>NOTIFY ME</h2>
           <h4 className={classes.description}>
-            Divide details about your product or agency work into parts. Write a
-            few lines about each one and contact us about any further
-            collaboration. We will responde get back to you in a couple of
-            hours.
+            Divide details about your product or agency work into parts.
           </h4>
           <form>
             <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
+              {/* <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Name"
                   id="name"
@@ -37,7 +34,7 @@ export default function WorkSection() {
                     fullWidth: true
                   }}
                 />
-              </GridItem>
+              </GridItem> */}
               <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Email"
@@ -47,7 +44,7 @@ export default function WorkSection() {
                   }}
                 />
               </GridItem>
-              <CustomInput
+              {/* <CustomInput
                 labelText="Your Message"
                 id="message"
                 formControlProps={{
@@ -58,7 +55,7 @@ export default function WorkSection() {
                   multiline: true,
                   rows: 5
                 }}
-              />
+              /> */}
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
                   <Button color="primary">Send Message</Button>
