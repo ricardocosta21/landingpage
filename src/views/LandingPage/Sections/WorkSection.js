@@ -20,10 +20,10 @@ export default function WorkSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>NOTIFY ME</h2>
-          <h4 className={classes.description}>
+          {/* <h2 className={classes.title}>NOTIFY ME</h2> */}
+          {/* <h4 className={classes.description}>
             Divide details about your product or agency work into parts.
-          </h4>
+          </h4> */}
           <form>
             <GridContainer>
               {/* <GridItem xs={12} sm={12} md={6}>
@@ -58,7 +58,7 @@ export default function WorkSection() {
               /> */}
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                  <Button color="primary">Send Message</Button>
+                  <Button color="#324242">Notify Me</Button>
                 </GridItem>
               </GridContainer>
             </GridContainer>

@@ -1,5 +1,5 @@
 body{
-    background-color: #E5E5E5;
+    background-color: #ffffff;
     color: #3C4858;
 }
 
@@ -235,13 +235,13 @@ body{
     padding: 20px;
 }
 .separator-line{
-    background-color: #EEE;
+    background-color: #ffffff;
     height: 1px;
     width: 100%;
     display: block;
 }
 .separator.separator-gray{
-    background-color: #EEEEEE;
+    background-color: #ffffff;
 }
 .social-buttons-demo .btn{
     margin-right: 5px;
@@ -377,7 +377,7 @@ body{
     border-radius: 0;
 }
 .section-tabs{
-    background: #EEEEEE;
+    background: #FFFFFF;
 }
 .section-pagination{
     padding-bottom: 0;
@@ -437,7 +437,7 @@ body{
     font-weight: 700;
     font-family: "Roboto Slab", "Times New Roman", serif;
     line-height: 1.15em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .section {

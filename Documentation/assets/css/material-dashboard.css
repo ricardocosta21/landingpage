@@ -103,7 +103,7 @@
     margin: 0;
     border-radius: 0;
     height: 2px;
-    background: #c8c8c8;
+    background: #ffffff;
 }
 
 .noUi-origin[style^="left: 0"] .noUi-handle {
@@ -730,7 +730,7 @@ h2.title {
 
 .sidebar .nav li:hover>a,
 .off-canvas-sidebar .nav li:hover>a {
-    background: rgba(200, 200, 200, 0.2);
+    background: rgb(255, 255, 255);
     color: #3C4858;
 }
 
@@ -2384,7 +2384,7 @@ fieldset[disabled] .navbar .navbar-nav>li>a.btn.btn-rose.active {
 }
 
 body {
-    background-color: #EEEEEE;
+    background-color: #ffffff;
     color: #3C4858;
 }
 
@@ -4050,7 +4050,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .section-dark .nav-pills>li>a:focus,
 .section-image .nav-pills>li>a:hover,
 .section-image .nav-pills>li>a:focus {
-    background-color: #EEEEEE;
+    background-color: #ffffff;
 }
 
 .nav-pills>li>a {
@@ -5213,7 +5213,7 @@ footer .btn {
 .card .card-footer {
     margin: 0 20px 10px;
     padding-top: 10px;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #ffffff;
 }
 
 .card .card-footer .content {
@@ -6473,7 +6473,7 @@ footer .btn {
         left: auto;
         z-index: 1032;
         visibility: visible;
-        background-color: #9A9A9A;
+        background-color: #ffffff;
         overflow-y: visible;
         border-top: none;
         text-align: left;

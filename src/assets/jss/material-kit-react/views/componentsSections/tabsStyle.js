@@ -2,7 +2,7 @@ import { container } from "assets/jss/material-kit-react.js";
 
 const tabsStyle = {
   section: {
-    background: "#EEEEEE",
+    background: "#ffffff",
     padding: "70px 0"
   },
   container,

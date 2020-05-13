@@ -162,7 +162,7 @@
 .rdtPicker td.rdtMinute:hover,
 .rdtPicker td.rdtSecond:hover,
 .rdtPicker .rdtTimeToggle:hover {
-  background: #eeeeee;
+  background: #ffffff;
   cursor: pointer;
 }
 .rdtPicker td.rdtToday {
@@ -174,7 +174,7 @@
 .rdtPicker td.rdtDisabled,
 .rdtPicker td.rdtDisabled:hover {
   background: none;
-  color: #999999;
+  color: #ffffff;
   cursor: not-allowed;
 }
 
@@ -235,7 +235,7 @@
   cursor: pointer;
 }
 .rdtPicker thead tr:first-child th:hover {
-  background: #eeeeee;
+  background: #ffffff;
 }
 
 .rdtPicker button {

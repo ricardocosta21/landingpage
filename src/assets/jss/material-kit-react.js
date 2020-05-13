@@ -135,7 +135,7 @@ const roseCardHeader = {
 const cardActions = {
   margin: "0 20px 10px",
   paddingTop: "10px",
-  borderTop: "1px solid #eeeeee",
+  borderTop: "1px solid #ffffff",
   height: "auto",
   ...defaultFont
 };

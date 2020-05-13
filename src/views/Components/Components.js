@@ -40,9 +40,9 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
+      {/* <Header
         brand="Material Kit React"
-        rightLinks={<HeaderLinks />}
+        // rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
         changeColorOnScroll={{
@@ -50,9 +50,39 @@ export default function Components(props) {
           color: "white"
         }}
         {...rest}
-      />
-      <Parallax image={require("assets/img/r1.jpg")}>
-        <div className={classes.container}>
+      /> */}
+
+      <div className={classes.containerSides}>
+
+        <div className={classes.splitLeft}> 
+            <Parallax image={require("assets/img/r1.jpg")} />
+        </div>
+     
+        <div className={classes.splitRight}>
+          <Parallax>         
+            <div className={classes.centered}>
+              <GridContainer>
+               
+                <GridItem>
+                  <div className={classes.brand}>
+                    <h1 className={classes.title}>Material Kit React.</h1>
+                    <h3 className={classes.subtitle}>
+                      A Badass Material-UI Kit based on Material Design.
+                    </h3>
+                  </div>
+                  <WorkSection />
+                </GridItem>              
+              </GridContainer>
+            </div>
+          </Parallax>
+        </div>
+      </div>
+
+      
+
+       {/* <Parallax image={require("assets/img/r2.jpg")}
+        style={{ width: "50%"}}>
+        <div className={classes.mainRight}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
@@ -64,11 +94,12 @@ export default function Components(props) {
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
+      </Parallax> */}
 
-      <div className={classNames(classes.main, classes.mainRaised)}>
-          <ProductSection />
-          <WorkSection />
+      {/* <div className={classNames(classes.main, classes.mainRaised)}> */}
+          {/* <ProductSection />
+          <WorkSection /> */}
+
         {/* <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
@@ -88,8 +119,8 @@ export default function Components(props) {
         </GridItem>
         <SectionExamples />
         <SectionDownload /> */}
-      </div>
-      <Footer />
+      {/* </div> */}
+      {/* <Footer /> */}
     </div>
   );
 }

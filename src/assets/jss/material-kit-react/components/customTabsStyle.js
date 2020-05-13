@@ -34,7 +34,7 @@ const customTabsStyle = {
     }
   },
   tabSelected: {
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    backgroundColor: "#ffffff",
     transition: "0.2s background-color 0.1s"
   },
   tabWrapper: {
