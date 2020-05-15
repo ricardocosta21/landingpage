@@ -11,12 +11,12 @@ const componentsStyle = {
     fontSize: "3rem",
     fontWeight: "600",
     display: "inline-block",
-    position: "relative"
+    position: "center"
   },
   subtitle: {
-    fontSize: "1rem",
-    maxWidth: "500px",
-    margin: "10px 0 0"
+    fontSize: "1rem"
+    // maxWidth: "500px"
+    // margin: "10px 0 0"
   },
   main: {
     background: "#FFFFFF",
@@ -49,7 +49,7 @@ const componentsStyle = {
   
   splitLeft: {
     height: "100%",
-    width: "80%",
+    width: "60%",
     position: "fixed",    
     float: "left",
     top: "0",
@@ -62,7 +62,6 @@ const componentsStyle = {
     width: "50%",
     position: "fixed",
     float: "right",
-    top: "0",
     right: "0",
     background: "#ffffff"
   },

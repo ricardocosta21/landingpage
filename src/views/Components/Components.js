@@ -30,6 +30,7 @@ import SectionDownload from "./Sections/SectionDownload.js";
 
 import ProductSection from "../LandingPage/Sections/ProductSection.js";
 import WorkSection from "../LandingPage/Sections/WorkSection.js";
+import FeaturesSection from "../LandingPage/Sections/FeaturesSection.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 
@@ -53,34 +54,35 @@ export default function Components(props) {
       /> */}
 
       <div className={classes.containerSides}>
-
-        <div className={classes.splitLeft}> 
-            <Parallax image={require("assets/img/r1.jpg")} />
+        <div className={classes.splitLeft}>
+          <Parallax image={require("assets/img/r1.jpg")} />
         </div>
-     
+
         <div className={classes.splitRight}>
-          <Parallax>         
-            <div className={classes.centered}>
-              <GridContainer>
-               
-                <GridItem>
-                  <div className={classes.brand}>
-                    <h1 className={classes.title}>Material Kit React.</h1>
-                    <h3 className={classes.subtitle}>
+          <Parallax>
+            <GridContainer>
+              <GridItem>
+                <div className={classes.brand}>
+                  <h1 className={classes.title}>Material Kit React.</h1>
+                  {/* <h3 className={classes.subtitle}>
                       A Badass Material-UI Kit based on Material Design.
-                    </h3>
-                  </div>
-                  <WorkSection />
-                </GridItem>              
-              </GridContainer>
-            </div>
+                    </h3> */}
+                </div>
+              </GridItem>
+
+              <GridItem>
+                <FeaturesSection />
+              </GridItem>
+
+              <GridItem>
+                <WorkSection />
+              </GridItem>
+            </GridContainer>
           </Parallax>
         </div>
       </div>
 
-      
-
-       {/* <Parallax image={require("assets/img/r2.jpg")}
+      {/* <Parallax image={require("assets/img/r2.jpg")}
         style={{ width: "50%"}}>
         <div className={classes.mainRight}>
           <GridContainer>
@@ -97,10 +99,10 @@ export default function Components(props) {
       </Parallax> */}
 
       {/* <div className={classNames(classes.main, classes.mainRaised)}> */}
-          {/* <ProductSection />
+      {/* <ProductSection />
           <WorkSection /> */}
 
-        {/* <SectionBasics />
+      {/* <SectionBasics />
         <SectionNavbars />
         <SectionTabs />
         <SectionPills />

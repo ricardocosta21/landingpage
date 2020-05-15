@@ -25,7 +25,7 @@ export default function WorkSection() {
             Divide details about your product or agency work into parts.
           </h4> */}
           <form>
-            <GridContainer>
+            <GridContainer justify="center">
               {/* <GridItem xs={12} sm={12} md={6}>
                 <CustomInput
                   labelText="Your Name"
@@ -43,25 +43,18 @@ export default function WorkSection() {
                     fullWidth: true
                   }}
                 />
+                  <Button  size="sm" color="#324242">Notify Me</Button> 
               </GridItem>
-              {/* <CustomInput
-                labelText="Your Message"
-                id="message"
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea
-                }}
-                inputProps={{
-                  multiline: true,
-                  rows: 5
-                }}
-              /> */}
-              <GridContainer justify="center">
-                <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                  <Button color="#324242">Notify Me</Button>
-                </GridItem>
-              </GridContainer>
+
+
             </GridContainer>
+
+            {/* <GridContainer justify="center">
+              <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
+                <Button color="#324242">Notify Me</Button>
+              </GridItem>
+            </GridContainer> */}
+              
           </form>
         </GridItem>
       </GridContainer>
