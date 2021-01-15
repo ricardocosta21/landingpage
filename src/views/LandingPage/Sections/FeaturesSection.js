@@ -33,29 +33,32 @@ export default function FeaturesSection() {
       </GridContainer> */}
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem>
             <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
+              title="Enhance your guest's experience"
+              description="Provide your guests with tailored information about your property 
+              and top notch recommendations around town."
               iconColor="info"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+        </GridContainer>
+        <GridContainer>
+          <GridItem>
             <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
+              title="User-friendly technology"
+              description="One-click access to a professional, innovative technology designed for each property."
               iconColor="success"
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+        </GridContainer>
+        <GridContainer>
+          {/* <GridItem xs={12} sm={12} md={4}> */}
+           <GridItem>
             <InfoArea
               title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
+              description="Divide details about your product or agency work into parts."
               iconColor="danger"
               vertical
             />

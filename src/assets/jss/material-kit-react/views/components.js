@@ -5,7 +5,8 @@ const componentsStyle = {
   
   brand: {
     color: "#000000",
-    textAlign: "center"
+    textAlign: "center",
+    paddingBottom: "40px"
   },
   title: {
     fontSize: "3rem",
@@ -50,7 +51,7 @@ const componentsStyle = {
   splitLeft: {
     height: "100%",
     width: "60%",
-    position: "fixed",    
+    position: "relative",    
     float: "left",
     top: "0",
     left: "0",
@@ -59,8 +60,8 @@ const componentsStyle = {
 
   splitRight: {
     height: "100%",
-    width: "50%",
-    position: "fixed",
+    width: "55%",
+    position: "absolute",
     float: "right",
     right: "0",
     background: "#ffffff"
@@ -70,6 +71,11 @@ const componentsStyle = {
 centered: {
   // transform: translate(-50%, -50%),
   float: "center",
+},
+
+bottom: {
+  // transform: translate(-50%, -50%),
+  float: "bottom",
 },
 
 

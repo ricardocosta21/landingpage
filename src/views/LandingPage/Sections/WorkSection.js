@@ -43,10 +43,8 @@ export default function WorkSection() {
                     fullWidth: true
                   }}
                 />
-                  <Button  size="sm" color="#324242">Notify Me</Button> 
+                 <Button color="#324242">Notify Me</Button>
               </GridItem>
-
-
             </GridContainer>
 
             {/* <GridContainer justify="center">

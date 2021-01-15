@@ -14,6 +14,8 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionBasics from "./Sections/SectionBasics.js";
 import SectionNavbars from "./Sections/SectionNavbars.js";
@@ -33,40 +35,76 @@ import WorkSection from "../LandingPage/Sections/WorkSection.js";
 import FeaturesSection from "../LandingPage/Sections/FeaturesSection.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import navStyles from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.js";
+
 
 const useStyles = makeStyles(styles);
+const useNavStyles = makeStyles(navStyles);
 
 export default function Components(props) {
   const classes = useStyles();
+  const navClasses = useNavStyles();
+
   const { ...rest } = props;
   return (
-    <div>
-      {/* <Header
-        brand="Material Kit React"
-        // rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        {...rest}
-      /> */}
+    <div style={{ backgroundColor: 'white'}}>      
+   
+   
+        <GridContainer >
+          <GridItem xs={12} sm={12} md={12}>
+           
+          <Header
+            brand="#CasamentoDoAno"
+            color="info"
+            rightLinks={
+              <div>
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink + " " + classes.navLinkActive}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Historia
+                  </Button>
+              
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Informacoes
+                  </Button>
+               
+                  <Button
+                    href="#pablo"
+                    className={classes.navLink}
+                    onClick={e => e.preventDefault()}
+                    color="transparent"
+                  >
+                    Como chegar
+                  </Button>
+                  </div>
+            }
+          />
+          </GridItem>         
+        </GridContainer>  
 
-      <div className={classes.containerSides}>
-        <div className={classes.splitLeft}>
-          <Parallax image={require("assets/img/r1.jpg")} />
-        </div>
 
-        <div className={classes.splitRight}>
-          <Parallax>
+  
+      {/* <SectionNavbars/> */}
+        {/* <div className={classes.splitLeft}> */}       
+        {/* <div className={classes.splitRight}> */}
+        <div>        
             <GridContainer>
+
+              <GridItem>
+                <Parallax image={require("assets/img/paris.jpg")} />
+              </GridItem>
+            
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
-                  {/* <h3 className={classes.subtitle}>
-                      A Badass Material-UI Kit based on Material Design.
-                    </h3> */}
+                  <h1 className={classes.title}>Ines & Ricardo</h1>
                 </div>
               </GridItem>
 
@@ -77,9 +115,10 @@ export default function Components(props) {
               <GridItem>
                 <WorkSection />
               </GridItem>
+
             </GridContainer>
-          </Parallax>
-        </div>
+       
+     
       </div>
 
       {/* <Parallax image={require("assets/img/r2.jpg")}
@@ -122,7 +161,7 @@ export default function Components(props) {
         <SectionExamples />
         <SectionDownload /> */}
       {/* </div> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

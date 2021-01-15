@@ -11,14 +11,13 @@ import {
 
 const infoStyle = {
   infoArea: {
-    maxWidth: "360px",
+    maxWidth: "500px",
     margin: "0 auto",
     padding: "0px"
   },
   iconWrapper: {
-    float: "left",
-    marginTop: "24px",
-    marginRight: "10px"
+    float: "center",
+    marginTop: "20px"
   },
   primary: {
     color: primaryColor
@@ -54,7 +53,7 @@ const infoStyle = {
     color: grayColor,
     overflow: "hidden",
     marginTop: "0px",
-    fontSize: "14px"
+    fontSize: "16px"
   },
   iconWrapperVertical: {
     float: "none"
