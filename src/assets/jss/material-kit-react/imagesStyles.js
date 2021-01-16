@@ -1,4 +1,11 @@
 const imagesStyles = {
+  imgStatic:
+  {
+    borderTopLeftRadius: "calc(.25rem - 1px)",
+    borderTopRightRadius: "calc(.25rem - 1px)",
+    height: "70%",
+    width: "70%",
+  },
   imgFluid: {
     maxWidth: "100%",
     height: "auto"

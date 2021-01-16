@@ -1,4 +1,5 @@
 import React from "react";
+import loveImage from "assets/img/paris.jpg";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -33,92 +34,98 @@ import SectionDownload from "./Sections/SectionDownload.js";
 import ProductSection from "../LandingPage/Sections/ProductSection.js";
 import WorkSection from "../LandingPage/Sections/WorkSection.js";
 import FeaturesSection from "../LandingPage/Sections/FeaturesSection.js";
+import { NameForm } from "../LandingPage/Sections/FormSection.js";
+import MapContainer from "../LandingPage/Sections/MapContainer.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
 import navStyles from "assets/jss/material-kit-react/views/componentsSections/navbarsStyle.js";
-
+import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 
 const useStyles = makeStyles(styles);
 const useNavStyles = makeStyles(navStyles);
+const useImgStyles = makeStyles(imagesStyle);
 
 export default function Components(props) {
   const classes = useStyles();
   const navClasses = useNavStyles();
+  const imgClasses = useImgStyles();
 
   const { ...rest } = props;
   return (
-    <div style={{ backgroundColor: 'white'}}>      
-   
-   
-        <GridContainer >
-          <GridItem xs={12} sm={12} md={12}>
-           
+    <div style={{ backgroundColor: "white" }}>
+      <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
           <Header
             brand="#CasamentoDoAno"
             color="info"
             rightLinks={
               <div>
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink + " " + classes.navLinkActive}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Historia
-                  </Button>
-              
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Informacoes
-                  </Button>
-               
-                  <Button
-                    href="#pablo"
-                    className={classes.navLink}
-                    onClick={e => e.preventDefault()}
-                    color="transparent"
-                  >
-                    Como chegar
-                  </Button>
-                  </div>
+                <Button
+                  href="#pablo"
+                  className={classes.navLink + " " + classes.navLinkActive}
+                  onClick={(e) => e.preventDefault()}
+                  color="transparent"
+                >
+                  Historia
+                </Button>
+
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={(e) => e.preventDefault()}
+                  color="transparent"
+                >
+                  Informacoes
+                </Button>
+
+                <Button
+                  href="#pablo"
+                  className={classes.navLink}
+                  onClick={(e) => e.preventDefault()}
+                  color="transparent"
+                >
+                  Como chegar
+                </Button>
+              </div>
             }
           />
-          </GridItem>         
-        </GridContainer>  
+        </GridItem>
+      </GridContainer>
 
+      <div>
+        <GridContainer>
+          <GridItem>
+          <div className={classes.brand}>
+              <img className={imgClasses.imgStatic} src={loveImage} />
+           </div>
+          </GridItem>
 
-  
-      {/* <SectionNavbars/> */}
-        {/* <div className={classes.splitLeft}> */}       
-        {/* <div className={classes.splitRight}> */}
-        <div>        
-            <GridContainer>
+          <GridItem>
+            <div className={classes.brand}>
+              <h1 className={classes.title}>Ines & Ricardo</h1>
+            </div>
+          </GridItem>
 
-              <GridItem>
-                <Parallax image={require("assets/img/paris.jpg")} />
-              </GridItem>
-            
-              <GridItem>
-                <div className={classes.brand}>
-                  <h1 className={classes.title}>Ines & Ricardo</h1>
-                </div>
-              </GridItem>
+          <GridItem>
+            <FeaturesSection />
+          </GridItem>
 
-              <GridItem>
-                <FeaturesSection />
-              </GridItem>
+         
 
-              <GridItem>
-                <WorkSection />
-              </GridItem>
+          <GridItem> 
+          <div className={classes.mapForm}>
+            <MapContainer/>
+          </div>
+          </GridItem>
 
-            </GridContainer>
-       
-     
+          <GridItem>
+            <div className={classes.nameForm}>
+              <NameForm />
+            </div>
+          </GridItem>
+
+         
+        </GridContainer>
       </div>
 
       {/* <Parallax image={require("assets/img/r2.jpg")}

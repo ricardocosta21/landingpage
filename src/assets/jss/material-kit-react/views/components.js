@@ -3,6 +3,26 @@ import { container } from "assets/jss/material-kit-react.js";
 const componentsStyle = {
   container,
   
+  loveImage:
+  {
+  
+  },
+
+  nameForm:
+  {
+    textAlign: "center",
+  },
+
+
+
+  mapForm:
+  {
+    width: '100vw',
+    height: '100vh',
+  },
+
+
+
   brand: {
     color: "#000000",
     textAlign: "center",
