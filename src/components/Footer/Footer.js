@@ -32,10 +32,8 @@ export default function Footer(props) {
      
         <div className={classes.center}>
          made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-      
-          Ricardo Lindo
-          
+          <Favorite className={classes.icon} /> by{" "}      
+          Ricardo Lindo          
         </div>
       </div>
     </footer>
